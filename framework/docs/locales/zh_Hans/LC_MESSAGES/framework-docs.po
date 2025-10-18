@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flower main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-07 00:31+0000\n"
+"POT-Creation-Date: 2025-10-18 01:27+0000\n"
 "PO-Revision-Date: 2024-06-12 10:09+0000\n"
 "Last-Translator: Yan Gao <y.gaogy@gmail.com>\n"
 "Language: zh_Hans\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/contributor-explanation-public-and-private-apis.rst:2
 msgid "Public and private APIs"
@@ -764,12 +764,14 @@ msgstr ""
 "poetry.lock`))。"
 
 #: ../../source/contributor-how-to-install-development-versions.rst:14
+#, python-brace-format
 msgid ""
 "``flwr = { version = \"1.0.0a0\", allow-prereleases = true }`` (without "
 "extras)"
 msgstr "``flwr = { version = \"1.0.0a0\", allow-prereleases = true }`` （不含额外内容）"
 
 #: ../../source/contributor-how-to-install-development-versions.rst:15
+#, python-brace-format
 msgid ""
 "``flwr = { version = \"1.0.0a0\", allow-prereleases = true, extras = "
 "[\"simulation\"] }`` (with extras)"
@@ -784,10 +786,12 @@ msgid ""
 msgstr "通过 ``pyproject.toml`` 从 Flower 源代码的本地副本安装 ``flwr``："
 
 #: ../../source/contributor-how-to-install-development-versions.rst:20
+#, python-brace-format
 msgid "``flwr = { path = \"../../\", develop = true }`` (without extras)"
 msgstr "``flwr = { path = \"../../\", develop = true }`` （不含额外内容）"
 
 #: ../../source/contributor-how-to-install-development-versions.rst:21
+#, python-brace-format
 msgid ""
 "``flwr = { path = \"../../\", develop = true, extras = [\"simulation\"] "
 "}`` (with extras)"
@@ -800,14 +804,14 @@ msgid "Install ``flwr`` from a local wheel file via ``pyproject.toml``:"
 msgstr "通过 ``pyproject.toml`` 从本地轮子文件安装 ``flwr``："
 
 #: ../../source/contributor-how-to-install-development-versions.rst:25
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "``flwr = { path = \"../../dist/flwr-1.8.0-py3-none-any.whl\" }`` (without"
 " extras)"
 msgstr "``flwr = { path = \"../../dist/flwr-1.0.0-py3-none-any.whl\" }``（无额外内容）"
 
 #: ../../source/contributor-how-to-install-development-versions.rst:26
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "``flwr = { path = \"../../dist/flwr-1.8.0-py3-none-any.whl\", extras = "
 "[\"simulation\"] }`` (with extras)"
@@ -2131,7 +2135,7 @@ msgid ""
 msgstr "(或 ``<type>(<project>:skip) <subject>`` 忽略更新日志中的 PR）。"
 
 #: ../../source/contributor-tutorial-contribute-on-github.rst:372
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "Where ``<type>`` needs to be in ``{ci, fix, feat, docs, refactor, "
 "break}``, ``<project>`` should be in ``{framework, baselines, datasets, "
@@ -4619,7 +4623,7 @@ msgstr ""
 "Range(A)，随机化机制M提供（:math:`epsilon`，:math:`\\delta`）差异隐私："
 
 #: ../../source/explanation-differential-privacy.rst:42
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "\\small\n"
 "P[M(D_{1} \\in A)] \\leq e^{\\epsilon} P[M(D_{2} \\in A)] + \\delta"
@@ -6747,6 +6751,7 @@ msgid "VM Networking"
 msgstr ""
 
 #: ../../source/how-to-run-flower-on-azure.rst:86
+#, python-brace-format
 msgid ""
 "During the execution of the Flower application, the server VM "
 "(``SuperLink``) will be responsible to orchestrate the execution of the "
@@ -7752,6 +7757,7 @@ msgid "``flwr = \"^1.0.0\"`` (when using ``start_server`` and ``start_client``)"
 msgstr "``flwr = \"^1.0.0\"`` （当使用 ``start_server` 和 ``start_client` 时）"
 
 #: ../../source/how-to-upgrade-to-flower-1.0.rst:33
+#, python-brace-format
 msgid ""
 "``flwr = { version = \"^1.0.0\", extras = [\"simulation\"] }`` (when "
 "using ``start_simulation``)"
@@ -7827,6 +7833,7 @@ msgstr ""
 "dictionary）。下面是一个例子："
 
 #: ../../source/how-to-upgrade-to-flower-1.0.rst:65
+#, python-brace-format
 msgid ""
 "Flower 0.19: ``start_server(..., config={\"num_rounds\": 3, "
 "\"round_timeout\": 600.0}, ...)``"
@@ -9307,6 +9314,7 @@ msgid "**Run ID:** Unique identifier for the run."
 msgstr "当前运行的标识符。"
 
 #: ../../flwr ls:1
+#, python-brace-format
 msgid ""
 "**FAB:** Name of the FAB associated with the run (``{FAB_ID} "
 "(v{FAB_VERSION})``)."
@@ -12420,14 +12428,14 @@ msgid "Return -1 on failure."
 msgstr "失败时返回-1。"
 
 #: flwr.common.EventType.format:1 of
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "Return a formatted version of S, using substitutions from args and "
 "kwargs. The substitutions are identified by braces ('{' and '}')."
 msgstr "使用来自 args 和 kwargs 的替换，返回 S 的格式化版本。替换用大括号（'{'和'}'）标识。"
 
 #: flwr.common.EventType.format_map:1 of
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "Return a formatted version of S, using substitutions from mapping. The "
 "substitutions are identified by braces ('{' and '}')."
@@ -17074,6 +17082,7 @@ msgid ""
 msgstr "策略本身与 FedAvg 并无不同，客户端需要进行调整。在训练过程中，需要在损失函数中添加一个近端项："
 
 #: flwr.server.strategy.fedprox.FedProx:9 of
+#, python-brace-format
 msgid ""
 "\\\\frac{\\\\mu}{2} || w - w^t ||^2\n"
 "\n"
@@ -19345,6 +19354,7 @@ msgstr ""
 "[#2356](https://github.com/adap/flower/pull/2356))"
 
 #: ../../source/ref-changelog.md:127
+#, python-brace-format
 msgid ""
 "SuperExec has been integrated into SuperLink, enabling SuperLink to "
 "directly manage ServerApp processes (`flwr-serverapp`). The `flwr` CLI "
@@ -25265,6 +25275,7 @@ msgstr ""
 "`ServerConfig` ([#1317](https://github.com/adap/flower/pull/1317))"
 
 #: ../../source/ref-changelog.md:1228
+#, python-brace-format
 msgid ""
 "Instead of a config dictionary `{\"num_rounds\": 3, \"round_timeout\": "
 "600.0}`, `start_server` and `start_simulation` now expect a configuration"
@@ -26442,6 +26453,7 @@ msgstr ""
 "指标字典，以便服务器跟踪。"
 
 #: ../../source/ref-changelog.md:1513
+#, python-brace-format
 msgid ""
 "Strategy implementations should migrate their `aggregate_fit` and "
 "`aggregate_evaluate` methods to the new return type (e.g., by simply "
@@ -26894,7 +26906,7 @@ msgstr ""
 "learning-in-less-than-20-lines-of-code>`_"
 
 #: ../../source/ref-example-projects.rst:24
-#: ../../source/tutorial-quickstart-pytorch.rst:4
+#: ../../source/tutorial-quickstart-pytorch.rst:8
 msgid "Quickstart PyTorch"
 msgstr "PyTorch快速入门"
 
@@ -27375,11 +27387,17 @@ msgstr ""
 "请参阅`完整代码示例 "
 "<https://github.com/adap/flower/tree/main/examples/android>`_了解更多信息。"
 
-#: ../../source/tutorial-quickstart-fastai.rst:4
+#: ../../source/tutorial-quickstart-fastai.rst:-1
+msgid ""
+"Learn how to train a SqueezeNet model on MNIST using federated learning "
+"with Flower and fastai in this step-by-step tutorial."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-fastai.rst:8
 msgid "Quickstart fastai"
 msgstr "快速入门 fastai"
 
-#: ../../source/tutorial-quickstart-fastai.rst:6
+#: ../../source/tutorial-quickstart-fastai.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train a "
@@ -27390,24 +27408,24 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-fastai.rst:10
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:11
+#: ../../source/tutorial-quickstart-fastai.rst:14
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:15
 msgid "Then, clone the code example directly from GitHub:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-fastai.rst:18
+#: ../../source/tutorial-quickstart-fastai.rst:22
 msgid ""
 "This will create a new directory called `quickstart-fastai` containing "
 "the following files:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-fastai.rst:31
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:32
+#: ../../source/tutorial-quickstart-fastai.rst:35
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:36
 #, fuzzy
 msgid "Next, activate your environment, then run:"
 msgstr "并激活虚拟环境："
 
-#: ../../source/tutorial-quickstart-fastai.rst:41
+#: ../../source/tutorial-quickstart-fastai.rst:45
 msgid ""
 "This example by default runs the Flower Simulation Engine, creating a "
 "federation of 10 nodes using `FedAvg <https://flower.ai/docs/framework"
@@ -27418,32 +27436,32 @@ msgid ""
 " Let's run the project:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-fastai.rst:54
-#: ../../source/tutorial-quickstart-huggingface.rst:61
-#: ../../source/tutorial-quickstart-jax.rst:60
-#: ../../source/tutorial-quickstart-mlx.rst:60
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:55
-#: ../../source/tutorial-quickstart-pytorch.rst:62
-#: ../../source/tutorial-quickstart-scikitlearn.rst:59
-#: ../../source/tutorial-quickstart-tensorflow.rst:62
-#: ../../source/tutorial-quickstart-xgboost.rst:492
+#: ../../source/tutorial-quickstart-fastai.rst:58
+#: ../../source/tutorial-quickstart-huggingface.rst:65
+#: ../../source/tutorial-quickstart-jax.rst:64
+#: ../../source/tutorial-quickstart-mlx.rst:64
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:59
+#: ../../source/tutorial-quickstart-pytorch.rst:66
+#: ../../source/tutorial-quickstart-scikitlearn.rst:63
+#: ../../source/tutorial-quickstart-tensorflow.rst:66
+#: ../../source/tutorial-quickstart-xgboost.rst:496
 msgid "With default arguments you will see an output like this one:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-fastai.rst:98
-#: ../../source/tutorial-quickstart-huggingface.rst:112
-#: ../../source/tutorial-quickstart-jax.rst:102
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:105
-#: ../../source/tutorial-quickstart-pytorch.rst:103
-#: ../../source/tutorial-quickstart-scikitlearn.rst:101
-#: ../../source/tutorial-quickstart-tensorflow.rst:103
-#: ../../source/tutorial-quickstart-xgboost.rst:537
+#: ../../source/tutorial-quickstart-fastai.rst:102
+#: ../../source/tutorial-quickstart-huggingface.rst:116
+#: ../../source/tutorial-quickstart-jax.rst:106
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:109
+#: ../../source/tutorial-quickstart-pytorch.rst:107
+#: ../../source/tutorial-quickstart-scikitlearn.rst:105
+#: ../../source/tutorial-quickstart-tensorflow.rst:107
+#: ../../source/tutorial-quickstart-xgboost.rst:541
 msgid ""
 "You can also override the parameters defined in the "
 "``[tool.flwr.app.config]`` section in ``pyproject.toml`` like this:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-fastai.rst:108
+#: ../../source/tutorial-quickstart-fastai.rst:112
 #, fuzzy
 msgid ""
 "Check the `source code <https://github.com/adap/flower/tree/main/examples"
@@ -27454,17 +27472,17 @@ msgstr ""
 "quickstart/>`_ 可在 :code:`examples/xgboost-quickstart` 中找到。"
 
 #: ../../source/tutorial-quickstart-huggingface.rst:-1
-#, fuzzy
 msgid ""
-"Check out this Federating Learning quickstart tutorial for using Flower "
-"with 🤗 HuggingFace Transformers in order to fine-tune an LLM."
-msgstr "查看此联邦学习 快速入门教程，了解如何使用 Flower 和 HuggingFace Transformers 来微调 LLM。"
+"Learn how to train a large language model on the IMDB dataset using "
+"federated learning with Flower and 🤗 Hugging Face in this step-by-step "
+"tutorial."
+msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:4
+#: ../../source/tutorial-quickstart-huggingface.rst:8
 msgid "Quickstart 🤗 Transformers"
 msgstr "🤗 Transformers快速入门"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:6
+#: ../../source/tutorial-quickstart-huggingface.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train a large "
@@ -27477,7 +27495,7 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:12
+#: ../../source/tutorial-quickstart-huggingface.rst:16
 msgid ""
 "Let's use ``flwr new`` to create a complete Flower+🤗 Hugging Face "
 "project. It will generate all the files needed to run, by default with "
@@ -27486,75 +27504,64 @@ msgid ""
 "|iidpartitioner|_."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:17
-#: ../../source/tutorial-quickstart-jax.rst:16
-#: ../../source/tutorial-quickstart-mlx.rst:17
-#: ../../source/tutorial-quickstart-pytorch.rst:18
-#: ../../source/tutorial-quickstart-scikitlearn.rst:15
-#: ../../source/tutorial-quickstart-tensorflow.rst:18
+#: ../../source/tutorial-quickstart-huggingface.rst:21
+#: ../../source/tutorial-quickstart-jax.rst:20
+#: ../../source/tutorial-quickstart-mlx.rst:21
+#: ../../source/tutorial-quickstart-pytorch.rst:22
+#: ../../source/tutorial-quickstart-scikitlearn.rst:19
+#: ../../source/tutorial-quickstart-tensorflow.rst:22
 #, fuzzy
 msgid ""
 "Now that we have a rough idea of what this example is about, let's get "
 "started. First, install Flower in your new environment:"
 msgstr "现在，我们已经有了一个大致的概念，让我们开始吧。首先，我们需要安装 Flower。运行："
 
-#: ../../source/tutorial-quickstart-huggingface.rst:25
+#: ../../source/tutorial-quickstart-huggingface.rst:29
 msgid ""
 "Then, run the command below. You will be prompted to select one of the "
 "available templates (choose ``HuggingFace``), give a name to your "
 "project, and type in your developer name:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:33
-#: ../../source/tutorial-quickstart-jax.rst:32
-#: ../../source/tutorial-quickstart-mlx.rst:32
-#: ../../source/tutorial-quickstart-pytorch.rst:34
-#: ../../source/tutorial-quickstart-scikitlearn.rst:31
-#: ../../source/tutorial-quickstart-tensorflow.rst:34
+#: ../../source/tutorial-quickstart-huggingface.rst:37
+#: ../../source/tutorial-quickstart-jax.rst:36
+#: ../../source/tutorial-quickstart-mlx.rst:36
+#: ../../source/tutorial-quickstart-pytorch.rst:38
+#: ../../source/tutorial-quickstart-scikitlearn.rst:35
+#: ../../source/tutorial-quickstart-tensorflow.rst:38
 msgid ""
 "After running it you'll notice a new directory with your project name has"
 " been created. It should have the following structure:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:47
-#: ../../source/tutorial-quickstart-jax.rst:46
-#: ../../source/tutorial-quickstart-mlx.rst:46
-#: ../../source/tutorial-quickstart-pytorch.rst:48
-#: ../../source/tutorial-quickstart-scikitlearn.rst:45
-#: ../../source/tutorial-quickstart-tensorflow.rst:48
+#: ../../source/tutorial-quickstart-huggingface.rst:51
+#: ../../source/tutorial-quickstart-jax.rst:50
+#: ../../source/tutorial-quickstart-mlx.rst:50
+#: ../../source/tutorial-quickstart-pytorch.rst:52
+#: ../../source/tutorial-quickstart-scikitlearn.rst:49
+#: ../../source/tutorial-quickstart-tensorflow.rst:52
 msgid ""
 "If you haven't yet installed the project and its dependencies, you can do"
 " so by:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:54
-#: ../../source/tutorial-quickstart-jax.rst:53
-#: ../../source/tutorial-quickstart-pytorch.rst:55
-#: ../../source/tutorial-quickstart-scikitlearn.rst:52
-#: ../../source/tutorial-quickstart-tensorflow.rst:55
-#: ../../source/tutorial-quickstart-xgboost.rst:485
+#: ../../source/tutorial-quickstart-huggingface.rst:58
+#: ../../source/tutorial-quickstart-jax.rst:57
+#: ../../source/tutorial-quickstart-pytorch.rst:59
+#: ../../source/tutorial-quickstart-scikitlearn.rst:56
+#: ../../source/tutorial-quickstart-tensorflow.rst:59
+#: ../../source/tutorial-quickstart-xgboost.rst:489
 msgid "To run the project, do:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:102
+#: ../../source/tutorial-quickstart-huggingface.rst:106
 msgid "You can also run the project with GPU as follows:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:109
+#: ../../source/tutorial-quickstart-huggingface.rst:113
 msgid ""
 "This will use the default arguments where each ``ClientApp`` will use 2 "
 "CPUs and at most 4 ``ClientApp``\\s will run in a given GPU."
-msgstr ""
-
-#: ../../source/tutorial-quickstart-huggingface.rst:120
-#: ../../source/tutorial-quickstart-jax.rst:110
-#: ../../source/tutorial-quickstart-mlx.rst:110
-#: ../../source/tutorial-quickstart-pytorch.rst:111
-#: ../../source/tutorial-quickstart-scikitlearn.rst:109
-msgid ""
-"What follows is an explanation of each component in the project you just "
-"created: dataset partition, the model, defining the ``ClientApp`` and "
-"defining the ``ServerApp``."
 msgstr ""
 
 #: ../../source/tutorial-quickstart-huggingface.rst:124
@@ -27562,13 +27569,24 @@ msgstr ""
 #: ../../source/tutorial-quickstart-mlx.rst:114
 #: ../../source/tutorial-quickstart-pytorch.rst:115
 #: ../../source/tutorial-quickstart-scikitlearn.rst:113
-#: ../../source/tutorial-quickstart-tensorflow.rst:112
-#: ../../source/tutorial-quickstart-xgboost.rst:89
+msgid ""
+"What follows is an explanation of each component in the project you just "
+"created: dataset partition, the model, defining the ``ClientApp`` and "
+"defining the ``ServerApp``."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-huggingface.rst:128
+#: ../../source/tutorial-quickstart-jax.rst:118
+#: ../../source/tutorial-quickstart-mlx.rst:118
+#: ../../source/tutorial-quickstart-pytorch.rst:119
+#: ../../source/tutorial-quickstart-scikitlearn.rst:117
+#: ../../source/tutorial-quickstart-tensorflow.rst:116
+#: ../../source/tutorial-quickstart-xgboost.rst:93
 #, fuzzy
 msgid "The Data"
 msgstr "加载数据"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:126
+#: ../../source/tutorial-quickstart-huggingface.rst:130
 msgid ""
 "This tutorial uses |flowerdatasets|_ to easily download and partition the"
 " `IMDB <https://huggingface.co/datasets/stanfordnlp/imdb>`_ dataset. In "
@@ -27581,17 +27599,17 @@ msgid ""
 "their data partition."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:171
-#: ../../source/tutorial-quickstart-jax.rst:128
-#: ../../source/tutorial-quickstart-mlx.rst:155
-#: ../../source/tutorial-quickstart-pytorch.rst:150
-#: ../../source/tutorial-quickstart-scikitlearn.rst:138
-#: ../../source/tutorial-quickstart-tensorflow.rst:139
+#: ../../source/tutorial-quickstart-huggingface.rst:175
+#: ../../source/tutorial-quickstart-jax.rst:132
+#: ../../source/tutorial-quickstart-mlx.rst:159
+#: ../../source/tutorial-quickstart-pytorch.rst:154
+#: ../../source/tutorial-quickstart-scikitlearn.rst:142
+#: ../../source/tutorial-quickstart-tensorflow.rst:143
 #, fuzzy
 msgid "The Model"
 msgstr "训练模型"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:173
+#: ../../source/tutorial-quickstart-huggingface.rst:177
 #, fuzzy
 msgid ""
 "We will leverage 🤗 Hugging Face to federate the training of language "
@@ -27604,13 +27622,13 @@ msgstr ""
 "我们将利用Hugging Face技术，使用 Flower 在多个客户端上联邦训练语言模型。更具体地说，我们将对预先训练好的 "
 "Transformer 模型（distilBERT）进行微调，以便在 IMDB 评分数据集上进行序列分类。最终目标是检测电影评分是正面还是负面。"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:185
+#: ../../source/tutorial-quickstart-huggingface.rst:189
 msgid ""
 "Note that here, ``model_name`` is a string that will be loaded from the "
 "``Context`` in the ClientApp and ServerApp."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:188
+#: ../../source/tutorial-quickstart-huggingface.rst:192
 msgid ""
 "In addition to loading the pretrained model weights and architecture, we "
 "also include two utility functions to perform both training (i.e. "
@@ -27623,18 +27641,18 @@ msgid ""
 "perform local training or evaluation:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:228
-#: ../../source/tutorial-quickstart-jax.rst:170
-#: ../../source/tutorial-quickstart-mlx.rst:199
-#: ../../source/tutorial-quickstart-pytorch.rst:224
-#: ../../source/tutorial-quickstart-scikitlearn.rst:157
-#: ../../source/tutorial-quickstart-tensorflow.rst:168
-#: ../../source/tutorial-quickstart-xgboost.rst:149
+#: ../../source/tutorial-quickstart-huggingface.rst:232
+#: ../../source/tutorial-quickstart-jax.rst:174
+#: ../../source/tutorial-quickstart-mlx.rst:203
+#: ../../source/tutorial-quickstart-pytorch.rst:228
+#: ../../source/tutorial-quickstart-scikitlearn.rst:161
+#: ../../source/tutorial-quickstart-tensorflow.rst:172
+#: ../../source/tutorial-quickstart-xgboost.rst:153
 #, fuzzy
 msgid "The ClientApp"
 msgstr "客户端"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:230
+#: ../../source/tutorial-quickstart-huggingface.rst:234
 msgid ""
 "The main changes we have to make to use 🤗 Hugging Face with Flower will "
 "be found in the ``get_weights()`` and ``set_weights()`` functions. Under "
@@ -27647,8 +27665,8 @@ msgid ""
 "them to an existing PyTorch model. Doing this in fairly easy in PyTorch."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:241
-#: ../../source/tutorial-quickstart-pytorch.rst:234
+#: ../../source/tutorial-quickstart-huggingface.rst:245
+#: ../../source/tutorial-quickstart-pytorch.rst:238
 msgid ""
 "The specific implementation of ``get_weights()`` and ``set_weights()`` "
 "depends on the type of models you use. The ones shown below work for a "
@@ -27656,9 +27674,9 @@ msgid ""
 "have more exotic model architectures."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:257
-#: ../../source/tutorial-quickstart-jax.rst:197
-#: ../../source/tutorial-quickstart-pytorch.rst:250
+#: ../../source/tutorial-quickstart-huggingface.rst:261
+#: ../../source/tutorial-quickstart-jax.rst:201
+#: ../../source/tutorial-quickstart-pytorch.rst:254
 msgid ""
 "The rest of the functionality is directly inspired by the centralized "
 "case. The ``fit()`` method in the client trains the model using the local"
@@ -27666,7 +27684,7 @@ msgid ""
 "model received on a held-out validation set that the client might have:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:283
+#: ../../source/tutorial-quickstart-huggingface.rst:287
 msgid ""
 "Finally, we can construct a ``ClientApp`` using the ``FlowerClient`` "
 "defined above by means of a ``client_fn()`` callback. Note that the "
@@ -27677,18 +27695,18 @@ msgid ""
 "additional hyperparameters in ``pyproject.toml`` and access them here."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:316
-#: ../../source/tutorial-quickstart-jax.rst:246
-#: ../../source/tutorial-quickstart-mlx.rst:361
-#: ../../source/tutorial-quickstart-pytorch.rst:307
-#: ../../source/tutorial-quickstart-scikitlearn.rst:255
-#: ../../source/tutorial-quickstart-tensorflow.rst:232
-#: ../../source/tutorial-quickstart-xgboost.rst:269
+#: ../../source/tutorial-quickstart-huggingface.rst:320
+#: ../../source/tutorial-quickstart-jax.rst:250
+#: ../../source/tutorial-quickstart-mlx.rst:365
+#: ../../source/tutorial-quickstart-pytorch.rst:311
+#: ../../source/tutorial-quickstart-scikitlearn.rst:259
+#: ../../source/tutorial-quickstart-tensorflow.rst:236
+#: ../../source/tutorial-quickstart-xgboost.rst:273
 #, fuzzy
 msgid "The ServerApp"
 msgstr "服务器"
 
-#: ../../source/tutorial-quickstart-huggingface.rst:318
+#: ../../source/tutorial-quickstart-huggingface.rst:322
 msgid ""
 "To construct a ``ServerApp`` we define a ``server_fn()`` callback with an"
 " identical signature to that of ``client_fn()`` but the return type is "
@@ -27699,13 +27717,13 @@ msgid ""
 "value defined in the ``pyproject.toml``."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:356
+#: ../../source/tutorial-quickstart-huggingface.rst:360
 msgid ""
 "Congratulations! You've successfully built and run your first federated "
 "learning system for an LLM."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-huggingface.rst:361
+#: ../../source/tutorial-quickstart-huggingface.rst:365
 msgid ""
 "Check the source code of the extended version of this tutorial in "
 "|quickstart_hf_link|_ in the Flower GitHub repository. For a "
@@ -27926,15 +27944,21 @@ msgstr ""
 
 #: ../../source/tutorial-quickstart-jax.rst:-1
 msgid ""
+"Learn how to train a linear regression using federated learning with "
+"Flower and JAX in this step-by-step tutorial."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-jax.rst:-1
+msgid ""
 "Check out this Federated Learning quickstart tutorial for using Flower "
 "with Jax to train a linear regression model on a scikit-learn dataset."
 msgstr "查看此联邦学习快速入门教程，了解如何使用 Flower 和 Jax 在 scikit-learn 数据集上训练线性回归模型。"
 
-#: ../../source/tutorial-quickstart-jax.rst:4
+#: ../../source/tutorial-quickstart-jax.rst:8
 msgid "Quickstart JAX"
 msgstr "快速入门 JAX"
 
-#: ../../source/tutorial-quickstart-jax.rst:6
+#: ../../source/tutorial-quickstart-jax.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train a linear "
@@ -27946,7 +27970,7 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-jax.rst:11
+#: ../../source/tutorial-quickstart-jax.rst:15
 msgid ""
 "Let's use ``flwr new`` to create a complete Flower+JAX project. It will "
 "generate all the files needed to run, by default with the Flower "
@@ -27955,20 +27979,20 @@ msgid ""
 "function."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:24
+#: ../../source/tutorial-quickstart-jax.rst:28
 msgid ""
 "Then, run the command below. You will be prompted to select one of the "
 "available templates (choose ``JAX``), give a name to your project, and "
 "type in your developer name:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:116
+#: ../../source/tutorial-quickstart-jax.rst:120
 msgid ""
 "This tutorial uses scikit-learn's |makeregression|_ function to generate "
 "a random regression problem."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:130
+#: ../../source/tutorial-quickstart-jax.rst:134
 msgid ""
 "We defined a simple linear regression model to demonstrate how to create "
 "a JAX model, but feel free to replace it with a more sophisticated JAX "
@@ -27976,14 +28000,14 @@ msgid ""
 "<https://flax.readthedocs.io/en/latest/index.html>`_):"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:141
+#: ../../source/tutorial-quickstart-jax.rst:145
 msgid ""
 "In addition to defining the model architecture, we also include two "
 "utility functions to perform both training (i.e. ``train()``) and "
 "evaluation (i.e. ``evaluation()``) using the above model."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:172
+#: ../../source/tutorial-quickstart-jax.rst:176
 msgid ""
 "The main changes we have to make to use JAX with Flower will be found in "
 "the ``get_params()`` and ``set_params()`` functions. In ``get_params()``,"
@@ -27992,7 +28016,7 @@ msgid ""
 "NumPy arrays it applies them to an existing JAX model."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:180
+#: ../../source/tutorial-quickstart-jax.rst:184
 msgid ""
 "The ``get_params()`` and ``set_params()`` functions here are conceptually"
 " similar to the ``get_weights()`` and ``set_weights()`` functions that we"
@@ -28000,7 +28024,7 @@ msgid ""
 "tutorial."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:227
+#: ../../source/tutorial-quickstart-jax.rst:231
 msgid ""
 "Finally, we can construct a ``ClientApp`` using the ``FlowerClient`` "
 "defined above by means of a ``client_fn()`` callback. Note that the "
@@ -28011,7 +28035,7 @@ msgid ""
 "additioinal hyperparameters in ``pyproject.toml`` and access them here."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:248
+#: ../../source/tutorial-quickstart-jax.rst:252
 msgid ""
 "To construct a ``ServerApp`` we define a ``server_fn()`` callback with an"
 " identical signature to that of ``client_fn()`` but the return type is "
@@ -28022,13 +28046,13 @@ msgid ""
 " defined in the ``pyproject.toml``."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:276
+#: ../../source/tutorial-quickstart-jax.rst:280
 msgid ""
 "Congratulations! You've successfully built and run your first federated "
 "learning system for JAX with Flower!"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-jax.rst:281
+#: ../../source/tutorial-quickstart-jax.rst:285
 #, fuzzy
 msgid ""
 "Check the source code of the extended version of this tutorial in "
@@ -28037,12 +28061,18 @@ msgstr ""
 "此示例的`完整源代码 <https://github.com/adap/flower/blob/main/examples/xgboost-"
 "quickstart/>`_ 可在 :code:`examples/xgboost-quickstart` 中找到。"
 
-#: ../../source/tutorial-quickstart-mlx.rst:4
+#: ../../source/tutorial-quickstart-mlx.rst:-1
+msgid ""
+"Learn how to train an MLP on MNIST using federated learning with Flower "
+"and MLX in this step-by-step tutorial."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-mlx.rst:8
 #, fuzzy
 msgid "Quickstart MLX"
 msgstr "快速入门 JAX"
 
-#: ../../source/tutorial-quickstart-mlx.rst:6
+#: ../../source/tutorial-quickstart-mlx.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train simple MLP"
@@ -28053,7 +28083,7 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-mlx.rst:10
+#: ../../source/tutorial-quickstart-mlx.rst:14
 msgid ""
 "Let's use `flwr new` to create a complete Flower+MLX project. It will "
 "generate all the files needed to run, by default with the Simulation "
@@ -28065,24 +28095,24 @@ msgid ""
 "api/flwr_datasets.partitioner.IidPartitioner.html#flwr_datasets.partitioner.IidPartitioner>`_."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:25
+#: ../../source/tutorial-quickstart-mlx.rst:29
 msgid ""
 "Then, run the command below. You will be prompted to select of the "
 "available templates (choose ``MLX``), give a name to your project, and "
 "type in your developer name:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:53
+#: ../../source/tutorial-quickstart-mlx.rst:57
 msgid "To run the project do:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:102
+#: ../../source/tutorial-quickstart-mlx.rst:106
 msgid ""
 "You can also override the parameters defined in "
 "``[tool.flwr.app.config]`` section in the ``pyproject.toml`` like this:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:116
+#: ../../source/tutorial-quickstart-mlx.rst:120
 msgid ""
 "We will use `Flower Datasets <https://flower.ai/docs/datasets/>`_ to "
 "easily download and partition the `MNIST` dataset. In this example you'll"
@@ -28093,20 +28123,20 @@ msgid ""
 "api/flwr_datasets.partitioner.html>`_ available in Flower Datasets:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:157
+#: ../../source/tutorial-quickstart-mlx.rst:161
 msgid ""
 "We define the model as in the `centralized MLX example "
 "<https://github.com/ml-explore/mlx-examples/tree/main/mnist>`_, it's a "
 "simple MLP:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:180
+#: ../../source/tutorial-quickstart-mlx.rst:184
 msgid ""
 "We also define some utility functions to test our model and to iterate "
 "over batches."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:201
+#: ../../source/tutorial-quickstart-mlx.rst:205
 msgid ""
 "The main changes we have to make to use `MLX` with `Flower` will be found"
 " in the ``get_params()`` and ``set_params()`` functions. Indeed, MLX "
@@ -28115,17 +28145,17 @@ msgid ""
 "messages to work)."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:206
+#: ../../source/tutorial-quickstart-mlx.rst:210
 msgid "The way MLX stores its parameters is as follows:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:219
+#: ../../source/tutorial-quickstart-mlx.rst:223
 msgid ""
 "Therefore, to get our list of ``np.array`` objects, we need to extract "
 "each array and convert them into a NumPy array:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:228
+#: ../../source/tutorial-quickstart-mlx.rst:232
 msgid ""
 "For the ``set_params()`` function, we perform the reverse operation. We "
 "receive a list of NumPy arrays and want to convert them into MLX "
@@ -28133,24 +28163,24 @@ msgid ""
 "them to the `weight` and `bias` keys of each layer dict:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:243
+#: ../../source/tutorial-quickstart-mlx.rst:247
 msgid ""
 "The rest of the functionality is directly inspired by the centralized "
 "case. The ``fit()`` method in the client trains the model using the local"
 " dataset:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:259
+#: ../../source/tutorial-quickstart-mlx.rst:263
 msgid ""
 "Here, after updating the parameters, we perform the training as in the "
 "centralized case, and return the new parameters."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:262
+#: ../../source/tutorial-quickstart-mlx.rst:266
 msgid "And for the ``evaluate()`` method of the client:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:272
+#: ../../source/tutorial-quickstart-mlx.rst:276
 msgid ""
 "We also begin by updating the parameters with the ones sent by the "
 "server, and then we compute the loss and accuracy using the functions "
@@ -28158,12 +28188,12 @@ msgid ""
 "the `MLP` model as well as other components such as the optimizer."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:277
+#: ../../source/tutorial-quickstart-mlx.rst:281
 #, fuzzy
 msgid "Putting everything together we have:"
 msgstr "把所有东西放在一起"
 
-#: ../../source/tutorial-quickstart-mlx.rst:331
+#: ../../source/tutorial-quickstart-mlx.rst:335
 msgid ""
 "Finally, we can construct a ``ClientApp`` using the ``FlowerClient`` "
 "defined above by means of a ``client_fn()`` callback. Note that "
@@ -28174,7 +28204,7 @@ msgid ""
 "method."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:363
+#: ../../source/tutorial-quickstart-mlx.rst:367
 msgid ""
 "To construct a ``ServerApp``, we define a ``server_fn()`` callback with "
 "an identical signature to that of ``client_fn()``, but the return type is"
@@ -28185,15 +28215,15 @@ msgid ""
 "``FedAvg`` strategy."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:386
-#: ../../source/tutorial-quickstart-pytorch.rst:344
-#: ../../source/tutorial-quickstart-tensorflow.rst:266
+#: ../../source/tutorial-quickstart-mlx.rst:390
+#: ../../source/tutorial-quickstart-pytorch.rst:348
+#: ../../source/tutorial-quickstart-tensorflow.rst:270
 msgid ""
 "Congratulations! You've successfully built and run your first federated "
 "learning system."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-mlx.rst:390
+#: ../../source/tutorial-quickstart-mlx.rst:394
 #, fuzzy
 msgid ""
 "Check the `source code <https://github.com/adap/flower/blob/main/examples"
@@ -28228,11 +28258,11 @@ msgstr ""
 
 #: ../../source/tutorial-quickstart-pytorch.rst:-1
 msgid ""
-"Check out this Federated Learning quickstart tutorial for using Flower "
-"with PyTorch to train a CNN model on MNIST."
-msgstr "查看此联邦学习快速入门教程，了解如何使用 Flower 和 PyTorch 在 MNIST 上训练 CNN 模型。"
+"Learn how to train a Convolutional Neural Network on CIFAR-10 using "
+"federated learning with Flower and PyTorch in this step-by-step tutorial."
+msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:6
+#: ../../source/tutorial-quickstart-pytorch.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train a "
@@ -28243,7 +28273,7 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-pytorch.rst:11
+#: ../../source/tutorial-quickstart-pytorch.rst:15
 msgid ""
 "Let's use `flwr new` to create a complete Flower+PyTorch project. It will"
 " generate all the files needed to run, by default with the Flower "
@@ -28255,14 +28285,14 @@ msgid ""
 "api/flwr_datasets.partitioner.IidPartitioner.html#flwr_datasets.partitioner.IidPartitioner>`_."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:26
+#: ../../source/tutorial-quickstart-pytorch.rst:30
 msgid ""
 "Then, run the command below. You will be prompted to select one of the "
 "available templates (choose ``PyTorch``), give a name to your project, "
 "and type in your developer name:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:117
+#: ../../source/tutorial-quickstart-pytorch.rst:121
 msgid ""
 "This tutorial uses `Flower Datasets <https://flower.ai/docs/datasets/>`_ "
 "to easily download and partition the `CIFAR-10` dataset. In this example "
@@ -28276,13 +28306,13 @@ msgid ""
 " that correspond to their data partition."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:152
+#: ../../source/tutorial-quickstart-pytorch.rst:156
 msgid ""
 "We defined a simple Convolutional Neural Network (CNN), but feel free to "
 "replace it with a more sophisticated model if you'd like:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:177
+#: ../../source/tutorial-quickstart-pytorch.rst:181
 msgid ""
 "In addition to defining the model architecture, we also include two "
 "utility functions to perform both training (i.e. ``train()``) and "
@@ -28295,7 +28325,7 @@ msgid ""
 "training or evaluation:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:226
+#: ../../source/tutorial-quickstart-pytorch.rst:230
 msgid ""
 "The main changes we have to make to use `PyTorch` with `Flower` will be "
 "found in the ``get_weights()`` and ``set_weights()`` functions. In "
@@ -28305,7 +28335,7 @@ msgid ""
 "PyTorch model. Doing this in fairly easy in PyTorch."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:282
+#: ../../source/tutorial-quickstart-pytorch.rst:286
 msgid ""
 "Finally, we can construct a ``ClientApp`` using the ``FlowerClient`` "
 "defined above by means of a ``client_fn()`` callback. Note that the "
@@ -28316,7 +28346,7 @@ msgid ""
 "additioinal hyperparameters in ``pyproject.toml`` and access them here."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:309
+#: ../../source/tutorial-quickstart-pytorch.rst:313
 msgid ""
 "To construct a ``ServerApp`` we define a ``server_fn()`` callback with an"
 " identical signature to that of ``client_fn()`` but the return type is "
@@ -28330,7 +28360,7 @@ msgid ""
 "``pyproject.toml``."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch.rst:348
+#: ../../source/tutorial-quickstart-pytorch.rst:352
 #, fuzzy
 msgid ""
 "Check the `source code <https://github.com/adap/flower/blob/main/examples"
@@ -28340,24 +28370,30 @@ msgstr ""
 "此示例的`完整源代码 <https://github.com/adap/flower/blob/main/examples/xgboost-"
 "quickstart/>`_ 可在 :code:`examples/xgboost-quickstart` 中找到。"
 
-#: ../../source/tutorial-quickstart-pytorch.rst:354
-#: ../../source/tutorial-quickstart-tensorflow.rst:278
+#: ../../source/tutorial-quickstart-pytorch.rst:358
+#: ../../source/tutorial-quickstart-tensorflow.rst:282
 #, fuzzy
 msgid "Video tutorial"
 msgstr "教程"
 
-#: ../../source/tutorial-quickstart-pytorch.rst:358
+#: ../../source/tutorial-quickstart-pytorch.rst:362
 msgid ""
 "The video shown below shows how to setup a PyTorch + Flower project using"
 " our previously recommended APIs. A new video tutorial will be released "
 "that shows the new APIs (as the content above does)"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:4
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:-1
+msgid ""
+"Learn how to train an autoencoder on MNIST using federated learning with "
+"Flower and PyTorch Lightning in this step-by-step tutorial."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:8
 msgid "Quickstart PyTorch Lightning"
 msgstr "快速入门 PyTorch Lightning"
 
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:6
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train an "
@@ -28368,13 +28404,13 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:19
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:23
 msgid ""
 "This will create a new directory called `quickstart-pytorch-lightning` "
 "containing the following files:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:42
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:46
 msgid ""
 "By default, Flower Simulation Engine will be started and it will create a"
 " federation of 4 nodes using `FedAvg <https://flower.ai/docs/framework"
@@ -28385,13 +28421,13 @@ msgid ""
 " To run the project, do:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:93
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:97
 msgid ""
 "Each simulated `ClientApp` (two per round) will also log a summary of "
 "their local training process. Expect this output to be similar to:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-pytorch-lightning.rst:115
+#: ../../source/tutorial-quickstart-pytorch-lightning.rst:119
 #, fuzzy
 msgid ""
 "Check the `source code <https://github.com/adap/flower/tree/main/examples"
@@ -28403,15 +28439,21 @@ msgstr ""
 
 #: ../../source/tutorial-quickstart-scikitlearn.rst:-1
 msgid ""
+"Learn how to train a logistic regression on MNIST using federated "
+"learning with Flower and scikit-learn in this step-by-step tutorial."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-scikitlearn.rst:-1
+msgid ""
 "Check out this Federated Learning quickstart tutorial for using Flower "
 "with scikit-learn to train a linear regression model."
 msgstr "查看此联邦学习快速入门教程，了解如何使用 Flower 和 scikit-learn 训练线性回归模型。"
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:4
+#: ../../source/tutorial-quickstart-scikitlearn.rst:8
 msgid "Quickstart scikit-learn"
 msgstr "scikit-learn快速入门"
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:6
+#: ../../source/tutorial-quickstart-scikitlearn.rst:10
 #, fuzzy
 msgid ""
 "In this federated learning tutorial we will learn how to train a Logistic"
@@ -28422,7 +28464,7 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:10
+#: ../../source/tutorial-quickstart-scikitlearn.rst:14
 msgid ""
 "Let's use ``flwr new`` to create a complete Flower+scikit-learn project. "
 "It will generate all the files needed to run, by default with the Flower "
@@ -28430,14 +28472,14 @@ msgid ""
 "will be partitioned using |flowerdatasets|_'s |iidpartitioner|_"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:23
+#: ../../source/tutorial-quickstart-scikitlearn.rst:27
 msgid ""
 "Then, run the command below. You will be prompted to select one of the "
 "available templates (choose ``sklearn``), give a name to your project, "
 "and type in your developer name:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:115
+#: ../../source/tutorial-quickstart-scikitlearn.rst:119
 msgid ""
 "This tutorial uses |flowerdatasets|_ to easily download and partition the"
 " `MNIST <https://huggingface.co/datasets/ylecun/mnist>`_ dataset. In this"
@@ -28448,20 +28490,20 @@ msgid ""
 "partition."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:140
+#: ../../source/tutorial-quickstart-scikitlearn.rst:144
 msgid ""
 "We define the |logisticregression|_ model from scikit-learn in the "
 "``get_model()`` function:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:153
+#: ../../source/tutorial-quickstart-scikitlearn.rst:157
 msgid ""
 "To perform the training and evaluation, we will make use of the "
 "``.fit()`` and ``.score()`` methods available in the "
 "``LogisticRegression`` class."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:159
+#: ../../source/tutorial-quickstart-scikitlearn.rst:163
 msgid ""
 "The main changes we have to make to use scikit-learn with Flower will be "
 "found in the ``get_model_params()``, ``set_model_params()``, and "
@@ -28476,13 +28518,13 @@ msgid ""
 "is 28 × 28). Doing this is fairly easy in scikit-learn."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:198
+#: ../../source/tutorial-quickstart-scikitlearn.rst:202
 msgid ""
 "The rest of the functionality is directly inspired by the centralized "
 "case:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:226
+#: ../../source/tutorial-quickstart-scikitlearn.rst:230
 msgid ""
 "Finally, we can construct a ``ClientApp`` using the ``FlowerClient`` "
 "defined above by means of a ``client_fn()`` callback. Note that the "
@@ -28493,7 +28535,7 @@ msgid ""
 "additioinal hyperparameters in ``pyproject.toml`` and access them here."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:257
+#: ../../source/tutorial-quickstart-scikitlearn.rst:261
 msgid ""
 "To construct a ``ServerApp`` we define a ``server_fn()`` callback with an"
 " identical signature to that of ``client_fn()`` but the return type is "
@@ -28505,13 +28547,13 @@ msgid ""
 "``pyproject.toml``."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:295
+#: ../../source/tutorial-quickstart-scikitlearn.rst:299
 msgid ""
 "Congratulations! You've successfully built and run your first federated "
 "learning system in scikit-learn."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-scikitlearn.rst:300
+#: ../../source/tutorial-quickstart-scikitlearn.rst:304
 #, fuzzy
 msgid ""
 "Check the source code of the extended version of this tutorial in "
@@ -28521,17 +28563,17 @@ msgstr ""
 "quickstart/>`_ 可在 :code:`examples/xgboost-quickstart` 中找到。"
 
 #: ../../source/tutorial-quickstart-tensorflow.rst:-1
-#, fuzzy
 msgid ""
-"Check out this Federated Learning quickstart tutorial for using Flower "
-"with TensorFlow to train a CNN model on CIFAR-10."
-msgstr "查看此联邦学习快速入门教程，了解如何使用 Flower 和 TensorFlow 在 CIFAR-10 上训练 MobilNetV2 模型。"
+"Learn how to train a Convolutional Neural Network on CIFAR-10 using "
+"federated learning with Flower and TensorFlow in this step-by-step "
+"tutorial."
+msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:4
+#: ../../source/tutorial-quickstart-tensorflow.rst:8
 msgid "Quickstart TensorFlow"
 msgstr "快速入门 TensorFlow"
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:6
+#: ../../source/tutorial-quickstart-tensorflow.rst:10
 #, fuzzy
 msgid ""
 "In this tutorial we will learn how to train a Convolutional Neural "
@@ -28542,7 +28584,7 @@ msgstr ""
 "首先，建议创建一个虚拟环境，并在 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行一切。"
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:11
+#: ../../source/tutorial-quickstart-tensorflow.rst:15
 msgid ""
 "Let's use `flwr new` to create a complete Flower+TensorFlow project. It "
 "will generate all the files needed to run, by default with the Flower "
@@ -28554,14 +28596,14 @@ msgid ""
 "api/flwr_datasets.partitioner.IidPartitioner.html#flwr_datasets.partitioner.IidPartitioner>`_."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:26
+#: ../../source/tutorial-quickstart-tensorflow.rst:30
 msgid ""
 "Then, run the command below. You will be prompted to select one of the "
 "available templates (choose ``TensorFlow``), give a name to your project,"
 " and type in your developer name:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:114
+#: ../../source/tutorial-quickstart-tensorflow.rst:118
 msgid ""
 "This tutorial uses `Flower Datasets <https://flower.ai/docs/datasets/>`_ "
 "to easily download and partition the `CIFAR-10` dataset. In this example "
@@ -28575,14 +28617,14 @@ msgid ""
 " correspond to their data partition."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:141
+#: ../../source/tutorial-quickstart-tensorflow.rst:145
 msgid ""
 "Next, we need a model. We defined a simple Convolutional Neural Network "
 "(CNN), but feel free to replace it with a more sophisticated model if "
 "you'd like:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:170
+#: ../../source/tutorial-quickstart-tensorflow.rst:174
 msgid ""
 "With `TensorFlow`, we can use the built-in ``get_weights()`` and "
 "``set_weights()`` functions, which simplifies the implementation with "
@@ -28593,7 +28635,7 @@ msgid ""
 "set that the client might have:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:203
+#: ../../source/tutorial-quickstart-tensorflow.rst:207
 msgid ""
 "Finally, we can construct a ``ClientApp`` using the ``FlowerClient`` "
 "defined above by means of a ``client_fn()`` callback. Note that the "
@@ -28605,7 +28647,7 @@ msgid ""
 "``pyproject.toml`` and access them here."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:234
+#: ../../source/tutorial-quickstart-tensorflow.rst:238
 msgid ""
 "To construct a ``ServerApp`` we define a ``server_fn()`` callback with an"
 " identical signature to that of ``client_fn()`` but the return type is "
@@ -28617,7 +28659,7 @@ msgid ""
 "the global model to federate."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:270
+#: ../../source/tutorial-quickstart-tensorflow.rst:274
 #, fuzzy
 msgid ""
 "Check the source code of the extended version of this tutorial in "
@@ -28626,7 +28668,7 @@ msgstr ""
 "此示例的`完整源代码 <https://github.com/adap/flower/blob/main/examples/xgboost-"
 "quickstart/>`_ 可在 :code:`examples/xgboost-quickstart` 中找到。"
 
-#: ../../source/tutorial-quickstart-tensorflow.rst:282
+#: ../../source/tutorial-quickstart-tensorflow.rst:286
 msgid ""
 "The video shown below shows how to setup a TensorFlow + Flower project "
 "using our previously recommended APIs. A new video tutorial will be "
@@ -28635,19 +28677,25 @@ msgstr ""
 
 #: ../../source/tutorial-quickstart-xgboost.rst:-1
 msgid ""
+"Learn how to train a classification model on the Higgs dataset using "
+"federated learning with Flower and XGBoost in this step-by-step tutorial."
+msgstr ""
+
+#: ../../source/tutorial-quickstart-xgboost.rst:-1
+msgid ""
 "Check out this Federated Learning quickstart tutorial for using Flower "
 "with XGBoost to train classification models on trees."
 msgstr "查看此联邦学习 快速入门教程，了解如何使用 Flower 和 XGBoost 上训练分类模型。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:4
+#: ../../source/tutorial-quickstart-xgboost.rst:8
 msgid "Quickstart XGBoost"
 msgstr "XGBoost快速入门"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:7
+#: ../../source/tutorial-quickstart-xgboost.rst:11
 msgid "XGBoost"
 msgstr "XGBoost"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:9
+#: ../../source/tutorial-quickstart-xgboost.rst:13
 msgid ""
 "EXtreme Gradient Boosting (**XGBoost**) is a robust and efficient "
 "implementation of gradient-boosted decision tree (**GBDT**), that "
@@ -28660,19 +28708,19 @@ msgstr ""
 "Boosting（**XGBoost**）是梯度提升决策树（**GBDT**）的一种稳健而高效的实现方法，能最大限度地提高提升树方法的计算边界。它主要用于提高机器学习模型的性能和计算速度。在"
 " XGBoost 中，决策树是并发构建的，与 GBDT 采用的顺序方法不同。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:15
+#: ../../source/tutorial-quickstart-xgboost.rst:19
 msgid ""
 "Often, for tabular data on medium-sized datasets with fewer than 10k "
 "training examples, XGBoost surpasses the results of deep learning "
 "techniques."
 msgstr "对于训练示例少于 10k 的中型数据集上的表格数据，XGBoost 的结果往往超过深度学习技术。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:19
+#: ../../source/tutorial-quickstart-xgboost.rst:23
 #, fuzzy
 msgid "Why Federated XGBoost?"
 msgstr "为什么选择联邦 XGBoost？"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:21
+#: ../../source/tutorial-quickstart-xgboost.rst:25
 #, fuzzy
 msgid ""
 "As the demand for data privacy and decentralized learning grows, there's "
@@ -28681,7 +28729,7 @@ msgid ""
 "detection."
 msgstr "事实上，随着对数据隐私和分散学习的需求不断增长，越来越多的专业应用（如生存分析和金融欺诈检测）需要实施联邦 XGBoost 系统。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:25
+#: ../../source/tutorial-quickstart-xgboost.rst:29
 #, fuzzy
 msgid ""
 "Federated learning ensures that raw data remains on the local device, "
@@ -28693,11 +28741,11 @@ msgstr ""
 "联邦学习可确保原始数据保留在本地设备上，因此对于数据安全和隐私至关重要的敏感领域来说，这是一种极具吸引力的方法。鉴于 XGBoost "
 "的稳健性和高效性，将其与联邦学习相结合为应对这些特定挑战提供了一种前景广阔的解决方案。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:31
+#: ../../source/tutorial-quickstart-xgboost.rst:35
 msgid "Environment Setup"
 msgstr "环境设定"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:33
+#: ../../source/tutorial-quickstart-xgboost.rst:37
 #, fuzzy
 msgid ""
 "In this tutorial, we learn how to train a federated XGBoost model on the "
@@ -28716,7 +28764,7 @@ msgstr ""
 "comprehensive <https://github.com/adap/flower/tree/main/examples/xgboost-"
 "comprehensive>`_)，以运行各种实验。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:42
+#: ../../source/tutorial-quickstart-xgboost.rst:46
 #, fuzzy
 msgid ""
 "It is recommended to create a virtual environment and run everything "
@@ -28725,31 +28773,31 @@ msgstr ""
 "建议创建一个虚拟环境，并在此 `virtualenv <https://flower.ai/docs/recommended-env-"
 "setup.html>`_ 中运行所有内容。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:45
+#: ../../source/tutorial-quickstart-xgboost.rst:49
 msgid ""
 "We first need to install Flower and Flower Datasets. You can do this by "
 "running :"
 msgstr "我们首先需要安装 Flower 和 Flower Datasets。您可以通过运行 ："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:52
+#: ../../source/tutorial-quickstart-xgboost.rst:56
 #, fuzzy
 msgid ""
 "Since we want to use ``xgboost`` package to build up XGBoost trees, let's"
 " go ahead and install ``xgboost``:"
 msgstr "既然我们要使用 :code:`xgboost` 软件包来构建 XGBoost 树，那就继续安装 :code:`xgboost`："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:60
+#: ../../source/tutorial-quickstart-xgboost.rst:64
 #, fuzzy
 msgid "The Configurations"
 msgstr "配置值"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:62
+#: ../../source/tutorial-quickstart-xgboost.rst:66
 msgid ""
 "We define all required configurations / hyper-parameters inside the "
 "``pyproject.toml`` file:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-xgboost.rst:84
+#: ../../source/tutorial-quickstart-xgboost.rst:88
 #, fuzzy
 msgid ""
 "The ``local-epochs`` represents the number of iterations for local tree "
@@ -28760,13 +28808,13 @@ msgstr ""
 "代码:`num_local_round`表示本地树的迭代次数。我们默认使用 CPU 进行训练。可以通过将 :code:`tree_method` "
 "设置为 :code:`gpu_hist`，将其转换为 GPU。我们使用 AUC 作为评估指标。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:91
+#: ../../source/tutorial-quickstart-xgboost.rst:95
 msgid ""
 "This tutorial uses `Flower Datasets <https://flower.ai/docs/datasets/>`_ "
 "to easily download and partition the `HIGGS` dataset."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-xgboost.rst:105
+#: ../../source/tutorial-quickstart-xgboost.rst:109
 #, fuzzy
 msgid ""
 "In this example, we split the dataset into 20 partitions with uniform "
@@ -28778,21 +28826,21 @@ msgstr ""
 "在此示例中，我们将数据集分割成两个均匀分布的分区（:code:`IidPartitioner(num_partitions=2)`）。然后，我们根据"
 " :code:`node_id` 为给定客户端加载分区："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:110
+#: ../../source/tutorial-quickstart-xgboost.rst:114
 #, fuzzy
 msgid ""
 "Subsequently, we train/test split using the given partition (client's "
 "local data), and reformat data to DMatrix for the ``xgboost`` package."
 msgstr "然后，我们在给定的分区（客户端的本地数据）上进行训练/测试分割，并为 :code:`xgboost` 软件包转换数据格式。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:124
+#: ../../source/tutorial-quickstart-xgboost.rst:128
 #, fuzzy
 msgid ""
 "The functions of ``train_test_split`` and "
 "``transform_dataset_to_dmatrix`` are defined as below:"
 msgstr ":code:`train_test_split` 和 :code:`transform_dataset_too_dmatrix` 的函数定义如下："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:151
+#: ../../source/tutorial-quickstart-xgboost.rst:155
 #, fuzzy
 msgid ""
 "*Clients* are responsible for generating individual weight-updates for "
@@ -28803,13 +28851,13 @@ msgstr ""
 "加载数据集后，我们定义 Flower 客户端。我们按照一般规则定义从 :code:`fl.client.Client` 继承而来的 "
 ":code:`XgbClient` 类。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:176
+#: ../../source/tutorial-quickstart-xgboost.rst:180
 msgid ""
 "All required parameters defined above are passed to ``FlowerClient``'s "
 "constructor."
 msgstr ""
 
-#: ../../source/tutorial-quickstart-xgboost.rst:178
+#: ../../source/tutorial-quickstart-xgboost.rst:182
 #, fuzzy
 msgid ""
 "Then, we override ``fit`` and ``evaluate`` methods insides "
@@ -28818,7 +28866,7 @@ msgstr ""
 "然后，我们在 :code:`XgbClient` 类中重写 :code:`get_parameters`、:code:`fit` 和 "
 ":code:`evaluate` 方法如下。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:217
+#: ../../source/tutorial-quickstart-xgboost.rst:221
 #, fuzzy
 msgid ""
 "In ``fit``, at the first round, we call ``xgb.train()`` to build up the "
@@ -28830,7 +28878,7 @@ msgstr ""
 "分别存储在 :code:`self.bst` 和 :code:`self.config` 中。从第二轮开始，我们将服务器发送的全局模型加载到 "
 ":code:`self.bst`，然后使用函数 :code:`local_boost`更新本地训练数据的模型权重，如下所示："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:237
+#: ../../source/tutorial-quickstart-xgboost.rst:241
 #, fuzzy
 msgid ""
 "Given ``num_local_round``, we update trees by calling "
@@ -28841,7 +28889,7 @@ msgstr ""
 ":code:`self.bst.update`方法更新树。训练结束后，我们将提取最后一个 :code:`N=num_local_round` "
 "树并发送给服务器。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:265
+#: ../../source/tutorial-quickstart-xgboost.rst:269
 #, fuzzy
 msgid ""
 "In ``evaluate``, after loading the global model, we call ``bst.eval_set``"
@@ -28849,7 +28897,7 @@ msgid ""
 "returned."
 msgstr "在 :code:`evaluate`中，我们调用 :code:`self.bst.eval_set`函数对有效集合进行评估。将返回 AUC 值。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:271
+#: ../../source/tutorial-quickstart-xgboost.rst:275
 #, fuzzy
 msgid ""
 "After the local training on clients, clients' model updates are sent to "
@@ -28860,14 +28908,14 @@ msgstr ""
 "然后，这些更新会被发送到*服务器*，由*服务器*聚合后生成一个更好的模型。最后，*服务器*将这个改进版的模型发回给每个*客户端*，以完成一轮完整的"
 " FL。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:275
+#: ../../source/tutorial-quickstart-xgboost.rst:279
 #, fuzzy
 msgid ""
 "In the file named ``server_app.py``, we define a strategy for XGBoost "
 "bagging aggregation:"
 msgstr "我们首先定义了 XGBoost bagging聚合策略。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:308
+#: ../../source/tutorial-quickstart-xgboost.rst:312
 #, fuzzy
 msgid ""
 "An ``evaluate_metrics_aggregation`` function is defined to collect and "
@@ -28878,18 +28926,18 @@ msgstr ""
 "本示例使用两个客户端。我们定义了一个 :code:`evaluate_metrics_aggregation` 函数，用于收集客户机的 AUC "
 "值并求取平均值。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:313
+#: ../../source/tutorial-quickstart-xgboost.rst:317
 #, fuzzy
 msgid "Tree-based Bagging Aggregation"
 msgstr "基于树的bagging聚合"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:315
+#: ../../source/tutorial-quickstart-xgboost.rst:319
 msgid ""
 "You must be curious about how bagging aggregation works. Let's look into "
 "the details."
 msgstr "您一定很好奇bagging聚合是如何工作的。让我们来详细了解一下。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:317
+#: ../../source/tutorial-quickstart-xgboost.rst:321
 #, fuzzy
 msgid ""
 "In file ``flwr.server.strategy.fedxgb_bagging.py``, we define "
@@ -28901,7 +28949,7 @@ msgstr ""
 ":code:`flwr.server.strategy.FedAvg`继承的 :code:`FedXgbBagging`。然后，我们覆盖 "
 ":code:`aggregate_fit`、:code:`aggregate_evaluate` 和 :code:`evaluate` 方法如下："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:414
+#: ../../source/tutorial-quickstart-xgboost.rst:418
 #, fuzzy
 msgid ""
 "In ``aggregate_fit``, we sequentially aggregate the clients' XGBoost "
@@ -28910,7 +28958,7 @@ msgstr ""
 "在 :code:`aggregate_fit` 中，我们通过调用 :code:`aggregate()` 函数，按顺序聚合客户端的 XGBoost"
 " 树："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:474
+#: ../../source/tutorial-quickstart-xgboost.rst:478
 #, fuzzy
 msgid ""
 "In this function, we first fetch the number of trees and the number of "
@@ -28922,7 +28970,7 @@ msgstr ""
 "在该函数中，我们首先通过调用 :code:`_get_tree_nums` "
 "获取当前模型和上一个模型的树数和并行树数。然后，对获取的信息进行聚合。然后，聚合树（包含模型参数）生成新的树模型。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:479
+#: ../../source/tutorial-quickstart-xgboost.rst:483
 #, fuzzy
 msgid ""
 "After traversal of all clients' models, a new global model is generated, "
@@ -28930,11 +28978,11 @@ msgid ""
 "client."
 msgstr "在遍历所有客户端的模型后，会生成一个新的全局模型，然后进行序列化，并发回给每个客户端。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:483
+#: ../../source/tutorial-quickstart-xgboost.rst:487
 msgid "Launch Federated XGBoost!"
 msgstr "启动联邦 XGBoost！"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:533
+#: ../../source/tutorial-quickstart-xgboost.rst:537
 #, fuzzy
 msgid ""
 "Congratulations! You've successfully built and run your first federated "
@@ -28945,7 +28993,7 @@ msgstr ""
 "恭喜您！您已成功构建并运行了第一个联邦 XGBoost 系统。可以在 :code:`metrics_distributed` 中查看 AUC "
 "值。我们可以看到，平均 AUC 随 FL 轮数的增加而增加。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:547
+#: ../../source/tutorial-quickstart-xgboost.rst:551
 #, fuzzy
 msgid ""
 "Check the full `source code "
@@ -28956,11 +29004,11 @@ msgstr ""
 "此示例的`完整源代码 <https://github.com/adap/flower/blob/main/examples/xgboost-"
 "quickstart/>`_ 可在 :code:`examples/xgboost-quickstart` 中找到。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:552
+#: ../../source/tutorial-quickstart-xgboost.rst:556
 msgid "Comprehensive Federated XGBoost"
 msgstr "综合的联邦 XGBoost"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:554
+#: ../../source/tutorial-quickstart-xgboost.rst:558
 #, fuzzy
 msgid ""
 "Now that you know how federated XGBoost works with Flower, it's time to "
@@ -28976,12 +29024,12 @@ msgstr ""
 "<https://github.com/adap/flower/tree/main/examples/xgboost-"
 "comprehensive>`_)中，我们提供了更多选项来定义各种实验设置，包括数据分区和集中/分布式评估。让我们一起来看看！"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:562
+#: ../../source/tutorial-quickstart-xgboost.rst:566
 #, fuzzy
 msgid "Cyclic Training"
 msgstr "集中式训练"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:564
+#: ../../source/tutorial-quickstart-xgboost.rst:568
 #, fuzzy
 msgid ""
 "In addition to bagging aggregation, we offer a cyclic training scheme, "
@@ -28995,12 +29043,12 @@ msgstr ""
 "FL。在循环训练方案中，每轮只有一个客户端参与训练，而不是多个客户端聚合在一起。训练好的本地 XGBoost "
 "树将传递给下一个客户端，作为下一轮提升的初始化模型。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:570
+#: ../../source/tutorial-quickstart-xgboost.rst:574
 #, fuzzy
 msgid "To do this, we first customise a ``ClientManager`` in ``server_app.py``:"
 msgstr "为此，我们首先要在 :code:`server_utils.py` 中自定义一个 :code:`ClientManager`："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:610
+#: ../../source/tutorial-quickstart-xgboost.rst:614
 #, fuzzy
 msgid ""
 "The customised ``ClientManager`` samples all available clients in each FL"
@@ -29014,7 +29062,7 @@ msgstr ""
 ":code:`flwr.server.strategy.fedxgb_cyclic.py`\"中定义了一个新策略 "
 ":code:`FedXgbCyclic`，以便在给定回合中按顺序只选择一个客户端，并将接收到的模型传递给下一个客户端。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:652
+#: ../../source/tutorial-quickstart-xgboost.rst:656
 #, fuzzy
 msgid ""
 "Unlike the original ``FedAvg``, we don't perform aggregation here. "
@@ -29024,7 +29072,7 @@ msgstr ""
 "与最初的 :code:`FedAvg` 不同，我们在这里不执行聚合。相反，我们只是通过覆盖 :code:`aggregate_fit` "
 "将接收到的客户端模型复制为全局模型。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:655
+#: ../../source/tutorial-quickstart-xgboost.rst:659
 #, fuzzy
 msgid ""
 "Also, the customised ``configure_fit`` and ``configure_evaluate`` methods"
@@ -29033,12 +29081,12 @@ msgstr ""
 "此外，定制的 :code:`configure_fit` 和 :code:`configure_evaluate` 方法可确保在 FL "
 "轮中按顺序选择客户："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:685
+#: ../../source/tutorial-quickstart-xgboost.rst:689
 #, fuzzy
 msgid "Customised Data Partitioning"
 msgstr "定制数据分区"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:687
+#: ../../source/tutorial-quickstart-xgboost.rst:691
 #, fuzzy
 msgid ""
 "In ``task.py``, we use the ``instantiate_fds`` function to instantiate "
@@ -29051,19 +29099,19 @@ msgstr ""
 ":code:`num_partitions` 和 :code:`partitioner_type` "
 "来实例化数据分区器。目前，我们提供四种支持的分区器类型（均匀、线性、正方形、指数）来模拟数据量的均匀性/非均匀性。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:726
+#: ../../source/tutorial-quickstart-xgboost.rst:730
 #, fuzzy
 msgid "Customised Centralised / Distributed Evaluation"
 msgstr "定制的集中/分布式评估"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:728
+#: ../../source/tutorial-quickstart-xgboost.rst:732
 #, fuzzy
 msgid ""
 "To facilitate centralised evaluation, we define a function in "
 "``server_app.py``:"
 msgstr "为便于集中评估，我们在 :code:`server.py` 中定义了一个函数："
 
-#: ../../source/tutorial-quickstart-xgboost.rst:759
+#: ../../source/tutorial-quickstart-xgboost.rst:763
 #, fuzzy
 msgid ""
 "This function returns an evaluation function, which instantiates a "
@@ -29074,7 +29122,7 @@ msgstr ""
 "此函数返回一个评估函数，该函数实例化一个 :code:`Booster` 对象，并向其加载全局模型参数。评估通过调用 "
 ":code:`eval_set()` 方法进行，并报告测试的 AUC 值。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:763
+#: ../../source/tutorial-quickstart-xgboost.rst:767
 #, fuzzy
 msgid ""
 "As for distributed evaluation on the clients, it's same as the quick-"
@@ -29084,18 +29132,18 @@ msgstr ""
 "至于客户端上的分布式评估，与快速启动示例相同，通过覆盖 :code:`client.py` 中 :code:`XgbClient` 类内部的 "
 ":code:`evaluate()` 方法。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:768
+#: ../../source/tutorial-quickstart-xgboost.rst:772
 #, fuzzy
 msgid "Arguments Explainer"
 msgstr "参数解析器"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:770
+#: ../../source/tutorial-quickstart-xgboost.rst:774
 msgid ""
 "We define all hyper-parameters under ``[tool.flwr.app.config]`` entry in "
 "``pyproject.toml``:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-xgboost.rst:799
+#: ../../source/tutorial-quickstart-xgboost.rst:803
 #, fuzzy
 msgid ""
 "On the server side, we allow user to specify training strategies / FL "
@@ -29107,7 +29155,7 @@ msgstr ""
 "这允许用户指定总客户数/FL 轮数/参与客户数/评估客户数以及评估方式。请注意，如果使用 :code:`--centralised-"
 "eval`，服务器将进行集中评估，客户端评估的所有功能将被禁用。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:804
+#: ../../source/tutorial-quickstart-xgboost.rst:808
 #, fuzzy
 msgid ""
 "On the client side, we can define various options for client data "
@@ -29117,22 +29165,22 @@ msgid ""
 "clients by setting ``scaled-lr = true``."
 msgstr "这定义了客户端数据分区的各种选项。此外，通过设置 :code:`-centralised-eval`，客户端还可以选择在集中测试集上进行评估。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:810
+#: ../../source/tutorial-quickstart-xgboost.rst:814
 #, fuzzy
 msgid "Example Commands"
 msgstr "命令示例"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:812
+#: ../../source/tutorial-quickstart-xgboost.rst:816
 msgid "To run bagging aggregation for 5 rounds evaluated on centralised test set:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-xgboost.rst:818
+#: ../../source/tutorial-quickstart-xgboost.rst:822
 msgid ""
 "To run cyclic training with linear partitioner type evaluated on "
 "centralised test set:"
 msgstr ""
 
-#: ../../source/tutorial-quickstart-xgboost.rst:827
+#: ../../source/tutorial-quickstart-xgboost.rst:831
 #, fuzzy
 msgid ""
 "The full `code <https://github.com/adap/flower/blob/main/examples"
@@ -29142,12 +29190,12 @@ msgstr ""
 "此综合示例的全部`源代码 <https://github.com/adap/flower/blob/main/examples/xgboost-"
 "comprehensive/>`_ 可在 :code:`examples/xgboost-comprehensive` 中找到。"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:833
+#: ../../source/tutorial-quickstart-xgboost.rst:837
 #, fuzzy
 msgid "Video Tutorial"
 msgstr "教程"
 
-#: ../../source/tutorial-quickstart-xgboost.rst:837
+#: ../../source/tutorial-quickstart-xgboost.rst:841
 msgid ""
 "The video shown below shows how to setup a XGBoost + Flower project using"
 " our previously recommended APIs. A new video tutorial will be released "
@@ -30279,6 +30327,7 @@ msgid "Where's the accuracy?"
 msgstr "准确度在哪里找？"
 
 #: ../../source/tutorial-series-get-started-with-flower-pytorch.ipynb:707
+#, python-brace-format
 msgid ""
 "You may have noticed that all metrics except for ``losses_distributed`` "
 "are empty. Where did the ``{\"accuracy\": float(accuracy)}`` go?"
@@ -30751,7 +30800,7 @@ msgid ""
 msgstr "在机器学习中，我们有一个模型和数据。模型可以是一个神经网络（如图所示），也可以是其他东西，比如经典的线性回归。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:41
-msgid "|2de22ebd50a840dba14a673c6fed3ed5|"
+msgid "|d68d791a66ad45718855172b0028464f|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:109
@@ -30766,7 +30815,7 @@ msgid ""
 msgstr "我们使用数据来训练模型，以完成一项有用的任务。任务可以是检测图像中的物体、转录音频或玩围棋等游戏。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:53
-msgid "|40524cd4aa474db2992d8a8c40807297|"
+msgid "|302313eea16e465aa9e1a2e7bffbeb27|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:111
@@ -30790,7 +30839,7 @@ msgid ""
 msgstr "它源于智能手机上用户与应用程序的交互、汽车上传感器数据的收集、笔记本电脑上键盘输入的接收，或者智能扬声器上某人试着唱的歌。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:67
-msgid "|9da60840ee0644b092f05ba73173f33a|"
+msgid "|7ba7d1594f0640259775bd5934488a61|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:113
@@ -30808,7 +30857,7 @@ msgstr ""
 "\"通常不只是一个地方，而是很多地方。它可能是多个运行同一应用程序的设备。但也可能是多个组织，都在为同一任务生成数据。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:79
-msgid "|11e0092cabe6445aad58eb94008d2200|"
+msgid "|20f68b05b5f64244a8a3e2a808a45cdc|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:115
@@ -30825,7 +30874,7 @@ msgid ""
 msgstr "因此，要使用机器学习或任何类型的数据分析，过去使用的方法是在中央服务器上收集所有数据。这个服务器可以在数据中心的某个地方，也可以在云端的某个地方。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:91
-msgid "|4de4dc335c4e4f7d9295ca4b428cbfd6|"
+msgid "|71dc49a0ffb1456eaea42b674f0bd62e|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:117
@@ -30840,7 +30889,7 @@ msgid ""
 msgstr "一旦所有数据都收集到一处，我们最终就可以使用机器学习算法在数据上训练我们的模型。这就是我们基本上一直依赖的机器学习方法。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:103
-msgid "|ac43194992e34215bfc57033a6166801|"
+msgid "|90b9ce637f47481a844d284be73574a9|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:119
@@ -30861,7 +30910,7 @@ msgid ""
 msgstr "我们刚刚看到的经典机器学习方法可以在某些情况下使用。很好的例子包括对假日照片进行分类或分析网络流量。在这些案例中，所有数据自然都可以在中央服务器上获得。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:138
-msgid "|7ff78e3c16f14ec1ac0282d2fad76719|"
+msgid "|1e990217ecc24d49ad9fdf6e93e76d3c|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:173
@@ -30876,7 +30925,7 @@ msgid ""
 msgstr "但这种方法并不适用于许多其他情况。例如，集中服务器上没有数据，或者一台服务器上的数据不足以训练出一个好的模型。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:150
-msgid "|09aa0d8c374148f3908afce241381f58|"
+msgid "|0cfd27a09f824fecb31638e5b068fd63|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:175
@@ -31036,7 +31085,7 @@ msgid ""
 msgstr "我们首先在服务器上初始化模型。这与经典的集中式学习完全相同：我们随机或从先前保存的检查点初始化模型参数。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:210
-msgid "|caf1e69f45ff4824853d1f4bc9b083bb|"
+msgid "|8ab6350dbc7440c78f7576bde800e61d|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:307
@@ -31061,7 +31110,7 @@ msgid ""
 msgstr "接下来，我们会将全局模型的参数发送到连接的客户端节点（如智能手机等边缘设备或企业的服务器）。这是为了确保每个参与节点都使用相同的模型参数开始本地训练。我们通常只使用几个连接节点，而不是所有节点。这样做的原因是，选择越来越多的客户端节点会导致收益递减。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:225
-msgid "|8972366fab9a408b8162ddb6475e1095|"
+msgid "|8fccef3780b54e78b5ae79fde9cb14dc|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:309
@@ -31087,7 +31136,7 @@ msgstr ""
 "（mini-batches）。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:240
-msgid "|67860439ceff4a16a055b8b51cda19b9|"
+msgid "|6f75646af9454aeebcf8a65c7134821d|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:311
@@ -31110,7 +31159,7 @@ msgid ""
 msgstr "经过本地训练后，每个客户节点最初收到的模型参数都会略有不同。参数之所以不同，是因为每个客户端节点的本地数据集中都有不同的数据。然后，客户端节点将这些模型更新发回服务器。它们发送的模型更新既可以是完整的模型参数，也可以只是本地训练过程中积累的梯度。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:255
-msgid "|f9ca6f1bc91a4f1397f77ed3bf27ac3e|"
+msgid "|d920b77d106047c4b63f8ac4b4c11bd9|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:313
@@ -31157,7 +31206,7 @@ msgstr ""
 " 100 个示例的 10 倍。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:273
-msgid "|65a316b05fef4a7bbfe03a9c9aa84b4f|"
+msgid "|39c0e4cb423640e2ac46134ea324dc1c|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:315
@@ -31265,7 +31314,7 @@ msgstr ""
 "为联邦学习、分析和评估提供了一种统一的方法。它允许用户联邦化任何工作负载、任何 ML 框架和任何编程语言。"
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:334
-msgid "|09111c31a80a4af5a651312e46ee31b5|"
+msgid "|3fde1203e03f4e589882e2265b332b18|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:340
@@ -39107,5 +39156,68 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "|2a721cef360b4f64a96d2647381767d1|"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check out this Federating Learning "
+#~ "quickstart tutorial for using Flower "
+#~ "with 🤗 HuggingFace Transformers in order"
+#~ " to fine-tune an LLM."
+#~ msgstr "查看此联邦学习 快速入门教程，了解如何使用 Flower 和 HuggingFace Transformers 来微调 LLM。"
+
+#~ msgid ""
+#~ "Check out this Federated Learning "
+#~ "quickstart tutorial for using Flower "
+#~ "with PyTorch to train a CNN model"
+#~ " on MNIST."
+#~ msgstr "查看此联邦学习快速入门教程，了解如何使用 Flower 和 PyTorch 在 MNIST 上训练 CNN 模型。"
+
+#~ msgid ""
+#~ "Check out this Federated Learning "
+#~ "quickstart tutorial for using Flower "
+#~ "with TensorFlow to train a CNN "
+#~ "model on CIFAR-10."
+#~ msgstr "查看此联邦学习快速入门教程，了解如何使用 Flower 和 TensorFlow 在 CIFAR-10 上训练 MobilNetV2 模型。"
+
+#~ msgid "|2de22ebd50a840dba14a673c6fed3ed5|"
+#~ msgstr ""
+
+#~ msgid "|40524cd4aa474db2992d8a8c40807297|"
+#~ msgstr ""
+
+#~ msgid "|9da60840ee0644b092f05ba73173f33a|"
+#~ msgstr ""
+
+#~ msgid "|11e0092cabe6445aad58eb94008d2200|"
+#~ msgstr ""
+
+#~ msgid "|4de4dc335c4e4f7d9295ca4b428cbfd6|"
+#~ msgstr ""
+
+#~ msgid "|ac43194992e34215bfc57033a6166801|"
+#~ msgstr ""
+
+#~ msgid "|7ff78e3c16f14ec1ac0282d2fad76719|"
+#~ msgstr ""
+
+#~ msgid "|09aa0d8c374148f3908afce241381f58|"
+#~ msgstr ""
+
+#~ msgid "|caf1e69f45ff4824853d1f4bc9b083bb|"
+#~ msgstr ""
+
+#~ msgid "|8972366fab9a408b8162ddb6475e1095|"
+#~ msgstr ""
+
+#~ msgid "|67860439ceff4a16a055b8b51cda19b9|"
+#~ msgstr ""
+
+#~ msgid "|f9ca6f1bc91a4f1397f77ed3bf27ac3e|"
+#~ msgstr ""
+
+#~ msgid "|65a316b05fef4a7bbfe03a9c9aa84b4f|"
+#~ msgstr ""
+
+#~ msgid "|09111c31a80a4af5a651312e46ee31b5|"
 #~ msgstr ""
 
